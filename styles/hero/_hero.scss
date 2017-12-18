@@ -1,0 +1,27 @@
+.hero{
+  &-body{
+    position: relative;
+    & > img{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+    }
+    .title, .subtitle, strong{
+      color:white !important;
+    }
+    .title{
+      margin-bottom: 2rem;
+    }
+  }
+  &-block{
+    display: inline-block;
+    background: black;
+    color:white;
+    padding: 2rem;
+  }
+}
