@@ -16,7 +16,7 @@ var paths = {
 gulp.task('nunjucks', function () {
     return gulp.src('*.+(njk)')
         .pipe(render({
-            path: ['src/partials']
+            path: ['./']
         }))
         .pipe(gulp.dest('./'))
 });
