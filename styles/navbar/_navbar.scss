@@ -1,0 +1,10 @@
+.navbar {
+    @media screen and (min-width: 1024px) {
+        min-height: 5rem;
+        &-item{
+            img{
+                max-height: 3.75rem
+            }
+        }
+    }
+}
