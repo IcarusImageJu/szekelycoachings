@@ -59,6 +59,6 @@ gulp.task('browser-sync', function () {
 });
 // Watch the SCSS and reload the browser
 gulp.task('watchReload', ['browser-sync'], function () {
-    gulp.watch(paths.sass, ['sass:lint', browserSync.reload]);
+    gulp.watch(paths.sass, ['cssnano', browserSync.reload]);
     gulp.watch(paths.njk, ['nunjucks', browserSync.reload]);
 });

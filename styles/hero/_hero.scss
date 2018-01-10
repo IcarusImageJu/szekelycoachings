@@ -1,7 +1,9 @@
-.hero{
-  &-body{
+.hero {
+
+  &-body {
     position: relative;
-    & > img{
+
+    & > img {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -12,14 +14,17 @@
       object-fit:cover;
       background: red;
     }
-    .title, .subtitle, strong{
+
+    .title, .subtitle, strong {
       color:white !important;
     }
-    .title{
+
+    .title {
       margin-bottom: 2rem;
     }
   }
-  &-block{
+
+  &-block {
     display: inline-block;
     background: black;
     color:white;
