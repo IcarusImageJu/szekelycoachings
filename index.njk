@@ -1,7 +1,7 @@
 {% extends "partials/layout/_main.njk" %}
 
 {% block content %}
-<section class="hero is-bold is-large">
+<section class="hero is-bold is-fullheight">
   <div class="hero-body">
     <img src="https://www.rd.com/wp-content/uploads/2016/09/03-enjoyed-questions-always-ask-job-interview-shironosov.jpg" alt="hero background">
     <div class="container">
@@ -17,12 +17,10 @@
   </div>
 </section>
 <section class="section section_background">
-    <img src="https://i0.wp.com/www.aden.org/files/2017/05/exposicion-coaching.jpg?resize=900%2C400" alt="">
+  <img src="https://tpcleadership.com/wp-content/uploads/2017/08/coaching-2-1060x645.jpg" alt="">  
   <div class="container">
     <div class="columns">
-      <div class="column">
-
-      </div>
+      
       <div class="column">
         <div class="content">
         <h2>
@@ -32,13 +30,31 @@
             <a class="button" href="">Prendre rendez-vous</a>
           </div>
       </div>
+      <div class="column">
+        {# offset column #}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero is-white is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Une méthode qui associe un travail sur le sens,
+      </h1>
+      <h2 class="subtitle">
+        les objectifs, la voix et la gestuelle
+      </h2>
     </div>
   </div>
 </section>
 <section class="section section_background">
-    <img src="https://tpcleadership.com/wp-content/uploads/2017/08/coaching-2-1060x645.jpg" alt="">
+  <img src="https://i0.wp.com/www.aden.org/files/2017/05/exposicion-coaching.jpg?resize=900%2C400" alt="">
   <div class="container">
     <div class="columns">
+    <div class="column">
+        {# offset columns #}
+      </div>
       <div class="column">
         <div class="content">
           <h2>
@@ -47,17 +63,15 @@
             <a class="button" href="">Mon coaching personalisé</a>
         </div>
       </div>
-      <div class="column">
-
-      </div>
+      
     </div>
   </div>
 </section>
-<section class="section">
+<section class="section" id="temoignage">
   <div class="container">
     <h2 class="title">Témoignages</h2>
-    <div class="columns">
-      <div class="column">
+    <div class="columns is-multiline">
+      <div class="column is-full">
           <div class="card">
               <div class="card-content">
                   <p class="">
@@ -81,7 +95,7 @@
               </div>
           </div>
       </div>
-      <div class="column">
+      <div class="column is-full">
           <div class="card">
               <div class="card-content">
                   <p class="">
@@ -98,7 +112,7 @@
           </div>
 
       </div>
-      <div class="column">
+      <div class="column is-full">
         <div class="card">
           <div class="card-content">
             <p class="">
@@ -117,6 +131,9 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="column is-full has-text-centered">
+        <a href="/contact.html" class="button is-primary">Prendre rendez-vous</a>
       </div>
     </div>
   </div>
