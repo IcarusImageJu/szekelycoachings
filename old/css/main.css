@@ -1,0 +1,86 @@
+/* @CHARSET "ISO-8859-1"; */
+
+@font-face {
+	font-family: "OpenSans";
+	src: url('/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: "OpenSans";
+	font-weight: bold;
+	src: url('/fonts/OpenSans-Bold.ttf');
+}
+
+/* General */
+html, body {
+    margin:0;
+    padding:0;
+	height: 100%;
+}
+
+body {
+    font-family: OpenSans, Arial, Helvetica, Verdana, sans-serif;
+    font-size: 1.4em;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+img {
+    border: 0;
+}
+
+fieldset{
+    border:none;
+}
+
+p {
+}
+
+a, a:VISITED {
+    color: blue;
+}
+
+.backgroundLight {
+    background-color: #aa9381;
+}
+
+.backgroundDark {
+    background-color: #816650;
+}
+
+.menuItem {
+    color: black;
+}
+
+.menuItemHightlighted {
+color: #e03954;
+}
+
+#footer {
+	position: fixed;
+	z-index: 30;
+	background-color: #81624b;
+	color: white;
+	font-size: 0.7em;
+
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+}
+@media screen and (min-width: 1350px) {
+	#footer {
+		padding-left: 70px;
+	}
+}
+
+.txterror {
+    color: red;
+}
+
+.txtform {
+    color: green;
+}
