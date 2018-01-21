@@ -38,6 +38,11 @@
                 color:white;
             }
         }
+        &_top{
+            & > img {
+                object-position: 50% 0%;
+            }
+        }
     }
 
 }

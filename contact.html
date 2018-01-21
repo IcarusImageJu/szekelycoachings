@@ -46,44 +46,41 @@
   
 <div class="section">
 <div class="container">
-  <div class="columns">
+  <form METHOD=POST ENCTYPE="text/plain" action="mailto:claire@szekelycoachings.com" class="columns">
   <div class="column is-6">
     <div class="content">
       <h1>Prendre rendez-vous</h1>
       <p>N'hesitez pas à prendre rendez-vous avec moi pour des renseignements complementaires</p>
     </div>
     <div class="field">
-  <label class="label">Nom prénom</label>
+  <label for="name" class="label">Nom prénom</label>
   <div class="control">
-    <input class="input" type="text" placeholder="Nom Prénom">
+    <input id="name" class="input" type="text" name="nom_prenom" placeholder="Nom Prénom" required>
   </div>
 </div>
 
 <div class="field">
-  <label class="label">Email</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="email" placeholder="email@domain.be" value="hello@">
+  <label for="email" class="label">Email</label>
+  <div class="control has-icons-left">
+    <input id="email" class="input" type="email" name="email" placeholder="email@domain.be" required>
     <span class="icon is-small is-left">
       <i class="fa fa-envelope"></i>
     </span>
-    <span class="icon is-small is-right">
-      <i class="fa fa-warning"></i>
-    </span>
   </div>
-  <p class="help is-danger">Cette adresse email n'est pas valide</p>
+  
 </div>
 
 
 <div class="field">
-  <label class="label">Message</label>
+  <label for="text" class="label">Message</label>
   <div class="control">
-    <textarea class="textarea" placeholder="Textarea"></textarea>
+    <textarea id="text" class="textarea" name="message" placeholder="Votre message" required></textarea>
   </div>
 </div>
 
 <div class="field">
   <div class="control">
-    <button class="button is-link">Envoyer mon message</button>
+    <button type="submit" class="button is-link">Envoyer mon message</button>
   </div>
 </div>
 
@@ -107,7 +104,7 @@
         </p>
     </div>
   </div>
- </div>
+ </form>
   <hr>
   <div class="column">
       <h2 class="title is-6">
