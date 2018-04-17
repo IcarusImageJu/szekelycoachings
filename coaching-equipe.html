@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/index.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52123474-4"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -17,6 +18,12 @@
 
   gtag('config', 'UA-52123474-4');
 </script>
+
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
 
 </head>
 
@@ -58,7 +65,7 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="field is-grouped">
-          <p class="control">
+          <div class="control">
             <a class="bd-tw-button button" target="_blank" href="https://www.linkedin.com/in/claireszekely/">
               <span class="icon">
                 <i class="fa fa-linkedin"></i>
@@ -67,15 +74,15 @@
                 LinkedIn
               </span>
             </a>
-          </p>
-          <p class="control">
+          </div>
+          <div class="control">
             <a class="button is-primary" href="/contact.html">
               <span class="icon">
                 <i class="fa fa-envelope"></i>
               </span>
               <span>Me contacter</span>
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -84,8 +91,8 @@
 
   
 <section class="hero is-bold is-large">
-  <div class="hero-body">
-    <img src="/images/hero-team.jpg" alt="coaching d'équipe">
+  <div class="hero-body uk-cover-container">
+    <img uk-cover src="/images/hero-team.jpg" alt="coaching d'équipe">
     <div class="container">
       <div class="hero-block">
         <h1 class="title">
